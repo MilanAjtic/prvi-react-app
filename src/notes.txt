@@ -1,5 +1,0 @@
-- Virtual DOM je model koji se nalazi u radnoj memoriji, pre nego se izrenderuje na stranicu
-- Optimizovano renderuje stranicu, ako se promeni jedan deo, ne renderuje sve, samo deo koji se menja
-- Na privremenom serveru, koji postoji dok aplikacija radi, postoji static folder gde su fajlovi koji su se izbildovali, i to se nalazi u radnoj memoriji; kad uradimo npm run build dobicemo na hard disku taj static folder sa fajlovima
-- Webpack ukljucuje i babel, koji prevodi na stariji JavaScript
-- DOM vs Virtual DOM?
