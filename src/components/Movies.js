@@ -15,7 +15,6 @@ class Movies extends Component {
     // console.log(this.state);
     fetch("https://baza-podataka.herokuapp.com/filmovi/")
       .then(response => response.json())
-      // .then(text => console.log(text));
       .then(json =>
         this.setState({
           filmovi: json,
@@ -24,6 +23,7 @@ class Movies extends Component {
       );
   }
   render() {
+    // const filmoviJsx = filmovi.map(film => (
     const filmoviJsx = this.state.filmovi.map(film => (
       <div>
         <h3>{film.naziv}</h3>
@@ -33,7 +33,7 @@ class Movies extends Component {
     ));
     return (
       <div className="movies-wrapper">
-        {this.state.isLoaded ? null : "ucitava se"}
+        {this.state.isLoaded ? null : "ucitava se..."}
         {filmoviJsx}
       </div>
     );
